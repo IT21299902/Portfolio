@@ -1,0 +1,138 @@
+
+-- Creating Airplane tables
+
+Create table Airplane
+(
+    Airplane_Id char(6)not null,
+	Name varchar(50) not null,
+	Tot_Seat int not null,
+	Type_Name varchar(40) not null,
+
+
+	constraint Airplane_Pk PRIMARY KEY (Airplane_Id),
+	constraint Airplane_Fk FOREIGN KEY(Type_Name) REFERENCES Airplane_Type(Type_Name),
+	constraint Airplane_Ck CHECK(Airplane_Id LIKE '[A-Z][A-Z][A-Z][0-9][0-9][0-9]')
+);
+
+-- Creating Airplane_Type table
+
+Create table Airplane_Type
+(
+	Type_Name varchar(40) not null,
+	Max_Seat int not  null,
+	Company varchar(40) not null,
+
+	constraint Airplane_Type_Pk PRIMARY KEY (Type_Name)
+);
+
+-- Creating Airport table
+
+Create table Airport
+(
+	Airport_Code char(4) not null, 
+	Name varchar(50) not null,
+	City varchar(20) not null,
+	State varchar(20) not null,
+
+	constraint Airport_Pk PRIMARY KEY (Airport_Code),
+	constraint Airport_Ck CHECK(Airport_Code LIKE '[A-Z][A-Z][A-Z][A-Z]')
+);
+
+-- Creating Flight table
+
+Create table Flight
+(
+	Flight_No char(5) not null,
+	Airline_Name varchar(50) not null,
+
+	constraint Flight_Pk PRIMARY KEY (Flight_No),
+	constraint Flight_Ck CHECK(Flight_No LIKE '[A-Z][A-Z][0-9][0-9][0-9]')
+);
+
+-- Creating Flight_Schedule table
+
+Create table Flight_Schedule
+(
+	Flight_No char(5) not null,
+	Schedule_Dates date not null,
+
+	constraint Fli_Schedule_Pk PRIMARY KEY (Flight_No,Schedule_Dates),
+	constraint Flight_Sched_Fk FOREIGN KEY(Flight_No) REFERENCES Flight(Flight_No)
+);
+
+-- Creating Flight_Fare table
+
+Create table Flight_Fare
+(
+	Flight_No char(5) not null,
+	Fare_Code char(3) not null,
+	Amount float not null,
+
+	constraint Fli_Fare_Pk PRIMARY KEY (Flight_No,Fare_Code),
+	constraint Flight_Fare_Fk FOREIGN KEY(Flight_No) REFERENCES Flight(Flight_No),
+	constraint Flight_Fare_Ck CHECK(Fare_Code LIKE '[A-Z][0-9][0-9]')
+);
+
+-- Creating Flight_Fare_Restrictions table
+
+Create table Flight_Fare_Restrictions
+(
+	Flight_No char(5) not null,
+	Fare_Code char(3) not null,
+	Restrictions varchar(40) not null,
+
+	constraint Flight_Fare_R_Pk PRIMARY KEY (Flight_No,Fare_Code,Restrictions),
+	constraint Flight_Fare_Res_Fk FOREIGN KEY(Flight_No,Fare_Code) REFERENCES Flight_Fare(Flight_No,Fare_Code)
+);
+
+-- Creating Flight_Leg table
+
+Create table Flight_Leg
+(
+	Flight_No char(5) not null,
+	Leg_No int not null,
+	Scheduled_Arr_Time time not null,
+	Scheduled_Dep_Time time not null,
+	Airport_Code char(4) not null, 
+
+
+	constraint Flight_Leg_Pk PRIMARY KEY (Flight_No,Leg_No),
+	constraint Flight_Leg_Fk FOREIGN KEY(Flight_No) REFERENCES Flight(Flight_No),
+	constraint Flight_Leg_Fk2 FOREIGN KEY(Airport_Code) REFERENCES Airport(Airport_Code)
+);
+
+-- Creating Leg_Instance table
+
+Create table Leg_Instance
+(
+	Flight_No char(5) not null,
+	Leg_No int not null,
+	Date date not null,
+	Available_seats int not null,
+	Airplane_Id char(6) not null,
+	Airport_Code char(4) not null,
+	Arrival_Time time not null,
+	Departure_Time time not null,
+
+	constraint Leg_Ins_Pk PRIMARY KEY (Flight_No,Leg_No,Date),
+	constraint Leg_Inst_Fk FOREIGN KEY(Flight_No,Leg_No) REFERENCES Flight_Leg(Flight_No,Leg_No),
+	constraint Leg_Inst_Fk2 FOREIGN KEY(Airplane_id) REFERENCES Airplane(Airplane_Id),
+	constraint Leg_Inst_Fk3 FOREIGN KEY(Airport_Code) REFERENCES Airport(Airport_Code),
+);
+
+-- Creating Seat table
+
+Create table Seat
+(
+	Flight_No char(5) not null,
+	Leg_No int not null,
+	Date date not null,
+	Seat_No char(4) not null,
+	Cust_Name varchar(40) not null,
+	Cust_Phone char(13) not null,
+
+    constraint Seat_Pk PRIMARY KEY (Flight_No,Leg_No,Date,Seat_No),
+	constraint Seat_FK FOREIGN KEY (Flight_No,Leg_No,Date) REFERENCES Leg_Instance(Flight_No,Leg_No,Date),
+	constraint Seat_Ck CHECK(Seat_No LIKE '[A-Z][0-9][0-9][0-9]'),
+	constraint Seat_Ck2 CHECK(Cust_Phone LIKE '+[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
+);

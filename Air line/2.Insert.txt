@@ -1,0 +1,49 @@
+INSERT INTO Airplane VALUES('DER549','B-52 Stratofortress',400,'Piston Aircraft');
+INSERT INTO Airplane VALUES('KOI770','MiG-21 fighter',720,'Wide Body Airliners');
+INSERT INTO Airplane VALUES('ZAQ248','P-51 Mustang',500,'Airbus');
+INSERT INTO Airplane VALUES('FGR425','Hawker Hurricane',350,'Turboprop Aircraft');
+
+INSERT INTO Airplane_Type VALUES('Piston Aircraft',500,'The Aerial');
+INSERT INTO Airplane_Type VALUES('Wide Body Airliners',850,'AerospacialSolutions');
+INSERT INTO Airplane_Type VALUES('Airbus',600,'Alpha technologies');
+INSERT INTO Airplane_Type VALUES('Turboprop Aircraft',450,'Fortitudeavia tech');
+
+INSERT INTO Airport VALUES('ENHK','Hasvik','Hasvik','Norway');
+INSERT INTO Airport VALUES('KHAB','Marion County Rankin Fite','Hamilton','United States');
+INSERT INTO Airport VALUES('FMCH','Prince Said Ibrahim International','Moroni','Comoros');
+INSERT INTO Airport VALUES('VVNB','Noi Bai International','Hanoi','Vietnam');
+
+INSERT INTO Flight VALUES('Kl649','Air Canada');
+INSERT INTO Flight VALUES('RT324','Fegex');
+INSERT INTO Flight VALUES('BV545','Air France');
+INSERT INTO Flight VALUES('MS948','Egyptair');
+
+INSERT INTO Flight_Schedule VALUES('Kl649','2022-10-07');
+INSERT INTO Flight_Schedule VALUES('RT324','2022-06-25');
+INSERT INTO Flight_Schedule VALUES('BV545','2021-12-18');
+INSERT INTO Flight_Schedule VALUES('MS948','2021-11-29');
+
+INSERT INTO Flight_Fare VALUES('Kl649','L56',78000.00);
+INSERT INTO Flight_Fare VALUES('RT324','H28',120000.00);
+INSERT INTO Flight_Fare VALUES('BV545','W43',50000.00);
+INSERT INTO Flight_Fare VALUES('MS948','S79',340000.00);
+
+INSERT INTO Flight_Fare_Restrictions VALUES('Kl649','L56',asdasd);
+INSERT INTO Flight_Fare_Restrictions VALUES('PI239','H28',asdsada);
+INSERT INTO Flight_Fare_Restrictions VALUES('BV545','WE43',adadasaad);
+INSERT INTO Flight_Fare_Restrictions VALUES('MS948','S79',dadasadd);
+
+INSERT INTO Flight_Leg VALUES('Kl649',2,'09:50:00','11:30:00','ENHK');
+INSERT INTO Flight_Leg VALUES('RT324',3,'01:30:00','07:00:00','KHAB');
+INSERT INTO Flight_Leg VALUES('BV545',1,'02:00:00','05:20:00','FMCH');
+INSERT INTO Flight_Leg VALUES('MS948',2,'08:40:00','11:00:00','VVNB');
+
+INSERT INTO Leg_Instance VALUES('Kl649',2,'2022-10-09',478,'DER549','ENHK','09:55:23','11:33:15');
+INSERT INTO Leg_Instance VALUES('RT324',3,'2022-07-07',345,'KOI770','KHAB','01:27:54','07:02:42');
+INSERT INTO Leg_Instance VALUES('BV545',1,'2022-05-24',231,'ZAQ248','FMCH','02:15:41','05:40:31');
+INSERT INTO Leg_Instance VALUES('MS948',2,'2022-11-01',434,'FGR425','VVNB','08:46:35','11:22:55');
+
+INSERT INTO Seat VALUES('Kl649',2,'2022-10-09','F167','John Williamson','+65002789224');
+INSERT INTO Seat VALUES('RT324',3,'2022-07-07','A782','Jane Andrew','+97675554090');
+INSERT INTO Seat VALUES('BV545',1,'2022-05-24','A996','Carles Mash','+67300223590');
+INSERT INTO Seat VALUES('MS948',2,'2022-11-01','F422','Aline Corge','+33900556744');
