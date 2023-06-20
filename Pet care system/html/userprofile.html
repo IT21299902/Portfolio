@@ -1,0 +1,461 @@
+<DOVTYPE! html>
+<html>
+<head> 
+    
+    <link rel="stylesheet" href="../styles/styles.css">
+	<style>
+	body{
+  background-color: #f5f5f5;  
+  font-family: Lato;
+}
+
+.profile{
+  position: absolute;
+  top: 100px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  height: auto;
+  width: 75%;
+  margin: -100px auto;
+  margin-bottom: 100px;
+  background-color: #fff;
+  border-top: 5px solid #39cb58;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2.5px 5px #ccc;
+}
+
+span.photo{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 10px 0 2.5px;
+  display: block;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+  background: #ddd url("https://www.adtechnology.co.uk/images/UGM-default-user.png");
+  background-size: 100%;
+  border-radius: 100%;
+  border: 2px solid #ddd;
+}
+label{
+  color: #555;
+  line-height: 2.1em;
+  margin-left: 10px;
+}
+label[for="avatar"]{
+  line-height: 120px;
+}
+
+
+
+div.circles{
+  width: 100%;
+  margin: 0 auto;
+}
+span.fa-users{
+  color: #777;
+  margin-left: 1px;
+  margin: 7px 7px 2.5px;
+}
+span.fa-users:after{
+  content: "Circles";
+  font-family: Lato;
+  margin-left: 3px;
+  color: #777;
+}
+.myCircle{
+  height: 200px;
+  width: 97.5%;
+  margin: 0 auto;
+  background-color: #f2ecee;
+  border-radius: 2.5px;
+}
+
+/*Circles Styles
+=========================*/
+.myCircle #tabs ul li:nth-child(1){
+  margin: 0;
+  padding: 0px 5px 10px;
+  /*margin-top: 5px;*/
+  background-color: white;
+  border-radius: 0 0 0 30px;
+}
+.myCircle #tabs ul li:nth-child(2){
+  margin-left: -3px;
+  padding: 0 5px 10px;
+  border-radius: 0 0 30px 0;
+  background-color: white;
+}
+.myCircle #tabs .active{
+  border-bottom: none;
+  padding-left: 10px;
+}
+.myCircle #tabs{
+  padding: 0;
+  margin: 0;
+}
+.fa-twitter,.fa-facebook,.fa-github{
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  padding: 2.5px;
+  margin-left: -15px;
+}
+
+/*Input Fields Styles
+=========================*/
+fieldset textarea,input{
+  font-family: Open Sans;
+  font-size: 15px;
+  color: #333;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 0 1px #39cb58;
+  padding: 5px;
+  width: 75%;
+  margin: 5px auto;
+  border: 0;
+  border-radius: 2.5px;
+  outline: 0;
+  transition: 0.3s ease;
+}
+fieldset textarea{
+  min-height: 40px;
+  max-height: 60px;
+}
+fieldset textarea:hover,input:hover{
+  box-shadow: 0 0 0 1px #39cb58;
+  background-color: #fff;
+}
+fieldset textarea:focus,input:focus{
+  box-shadow: 5px 5px 5px 1px #39cb58,
+              inset 0 2px 5px -1px rgba(0,0,0,0.25);
+}
+.grid-35{
+  width: 35%;
+  float: left;
+  font-weight: 500;
+  color: #333;
+  /* text-align: left; */
+}
+.grid-65{
+  position: relative;
+  width: 65%;
+  float: right;
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 17px;
+}
+.content h1{
+  text-align: center;
+  color: #555;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 200;
+  margin: 5px auto 15px auto;
+}
+
+fieldset{
+  text-align: center;
+  /* background-color: rgba(0,0,0,0.01); */
+  margin-bottom: -5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+input.Btn{
+  width: 48%;
+  float: left;
+  display: block;
+  margin: 20px auto;
+  margin-left: 1%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(57,203,88,0.65);
+  box-shadow: inset 0 0 0 2px #39cb58,
+              0 2px 0 0 rgba(57,203,88,0.5);
+  transition: 0.5s ease;
+}
+
+  .profile{ 
+
+    width: 550px;
+    margin-left:700px ;
+  }
+  
+   
+</style>
+
+	</head>
+	<body>
+  
+    <header>
+      <a class="logo" href="HomePage.html"><img src="../images/LogoMakr-6SIlTa.png" alt="logo"></a>
+      <nav>
+          <ul class="nav__links">
+              <li><a href="HomePage.html">HOME</a></li>
+              <li><a  href="aboutus.html">ABOUT US</a></li>
+
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">PETS SHOP</a>
+                  <div class="dropdown-content">
+                      <a href="Accesories store page.html">Pet Accessories</a>
+                      <a href="medicine.html">Pet Medicine</a>
+                      <a href="petstore.html">Pet food</a>
+                      <a href="PetGuide.html">Pet care guidebooks</a>
+                  </div>
+              <li><a href="contactus.html">CONTACT</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">SERVICES</a>
+                  <div class="dropdown-content">
+                      <a href="clinic.html">Pet Clinic</a>
+                      <a href="complaint.html">Pet harassment complaint</a>
+                      <a href="Emergency_rescue_Page.html">Pet emergency rescue service</a>
+                      <a href="Pet Addoption page.html">Pet adoption service</a>
+                  </div>
+              <li><a href="reportus.html">REPORT US</a></li>
+          </ul>
+      </nav>
+      <a class="cta" href="login.html">LOGIN/SIGN UP</a>
+      <a class="logo" href="/"><img src="../images/images/icons8-circled-user-male-skin-type-4-48.png" alt="logo"></a>
+
+  </header>
+  
+<div class="wrapper" style="margin-top:10px;">
+  
+  
+  <div class="profile"style="margin-top:10px; margin-bottom: 10px;">
+
+    <div class="content">
+      <h1>Edit Profile</h1>
+      <form action="userprofile.php" method="post">
+             <input type="text"  name="Id" placeholder="Enter the username">
+             <input type="submit" name="search" value="SEARCH BY ID">
+       
+        <fieldset>
+          <div class="grid-35">
+            <label for="avatar">Your Photo</label>
+          </div>
+          <div class="grid-65">
+            <span class="photo" title="Upload your Avatar!"></span>
+            <input type="file" class="btn" />
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+         <h2>User Info</h2>
+       </fieldset>
+
+
+        <fieldset>
+          <div class="grid-35">
+            <label for="fname">FIRST NAME  :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="fname" tabindex="1"  placeholder="Enter First Name">
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <div class="grid-35">
+            <label for="lname">LAST NAME  :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="lname" tabindex="2" placeholder="Enter Last Name">
+          </div>
+        </fieldset>
+       
+
+        <fieldset>
+          <div class="grid-35">
+            <label for="description">ADDRESS  :</label>
+          </div>
+          <div class="grid-65">
+            <textarea name="" id="" cols="30" rows="auto" tabindex="3" placeholder="Enter the Address"></textarea>
+          </div>
+        </fieldset>
+
+
+              <fieldset>
+          <div class="grid-35">
+            <label for="email">EMAIL  :</label>
+          </div>
+          <div class="grid-65">
+            <input type="email" id="location" tabindex="4" / placeholder="Enter the Email">
+          </div>
+        </fieldset>
+        
+
+        <fieldset>
+          <div class="grid-35">
+            <label for="phone_number">PHONE NO  :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="country" tabindex="5" /placeholder="Enter Mobile Number">
+          </div>
+        </fieldset>
+      
+
+
+        <fieldset>
+               <h2> Pet Details </h2>
+        </fieldset>       
+       
+        
+
+        <fieldset>
+          <div class="grid-35">
+            <label for="pet_name">PET NAME :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="pet_name" tabindex="13" / placeholder="Enter Pet Name">
+          </div>
+        </fieldset>
+
+
+          <fieldset>
+          <div class="grid-35">
+            <label for="pet_id">PET ID :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="pet_id" tabindex="13" / placeholder="Enter id">
+          </div>
+        </fieldset>
+
+    
+
+          <fieldset>
+          <div class="grid-35">
+            <label for="pet_breed">PET BREED </label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="pet_breed" tabindex="13" / placeholder="Enter pet breed">
+          </div>
+        </fieldset>
+
+          <fieldset>
+          <div class="grid-35">
+            <label for="pet_height">PET HEIGHT :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="pet_height" tabindex="13" / placeholder="Enter pet height ">
+          </div>
+        </fieldset>
+
+         <fieldset>
+          <div class="grid-35">
+            <label for="pet_weight">PET WEIGHT :</label>
+          </div>
+          <div class="grid-65">
+            <input type="text" id="pet_weight" tabindex="13" / placeholder="Enter pet weight ">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <input type="button" class="Btn cancel" value="Cancel" />
+          <input type="submit" class="Btn" value="Save Changes" />
+        </fieldset>
+       
+      </form>
+
+    </div>
+  </div>
+
+</div>
+<div>
+   <img src="https://cdn.dribbble.com/users/1461762/screenshots/10063212/media/22b2fe3deea61ccaefb47cefc3ab7663.png?compress=1&resize=400x300&vertical=top" style="margin-top:50px;margin-left:-5px;" width="500px" height="400px"alt="Img">
+ </div>
+<div>
+  <img src="https://media.istockphoto.com/vectors/pet-services-pets-care-services-pet-shop-tiny-people-and-pets-concept-vector-id1200533441?k=20&m=1200533441&s=170667a&w=0&h=jpw3KGV6g-2J6eiwW5bHdS-0Vuzas8qUW8WixhTgZd0=" style="margin-top:50px;margin-left:-5px;" width="500px" height="400px"alt="Img">
+</div>
+<!-- http://www.smashingmagazine.com/2013/08/08/release-livestyle-css-live-reload/ -->
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+      
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <a class="logo" href="HomePage.html"><img src="../images/images/LogoMakr-6SIlTa.png" alt="logo"></a>
+      <!--<h3><span></span></h3>-->
+
+      <p class="footer-links">
+        <a href="HomePage.html">Home</a>
+        <br>
+        <a href="clinic.html">Services</a>
+        <br>
+        <a href="petstore.html">Pets shop</a>
+        <br>
+        <a href="aboutus.html">About</a>
+        <br>
+        <a href="Feedback_page.html">Feedback</a>
+        <br>
+        <a href="contactus.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">familypetcare &copy; 2022</p>
+  </div>
+
+  <div class="footer-center">
+      <br><br>
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21 Isurupura Road</span> Malabe, Sri Lanka</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+94 77 222 2999</p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">familypetcare@ptsrevice.com</a></p>
+      </div>
+
+  </div>
+
+  <div class="footer-right">
+      <br>
+      <p class="footer-company-about">
+          <span>About the company</span>
+          This is a website of a online pet care service,
+          we produce all the health services and all accessories for pets &amp; SEO Learner.
+      </p>
+
+      <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"><img src="../images/images/visa-2.png" width="20" height="20"></i></a>
+          <a href="#"><i class="fa fa-twitter"><img src="../images/images/maestro.png" width="20" height="20"></i></a>
+          <a href="#"><i class="fa fa-linkedin"><img src="../images/images/paypal.png" width="20" height="20"></i></a>
+          <a href="#"><i class="fa fa-github"><img src="../images/images/apple-pay.png" width="20" height="20"></i></a>
+
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

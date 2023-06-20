@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+          <!--Watched youtbe tutotials and some online resources to complete the shope page -->
+    <link rel="icon" type="image/x-icon" href="../images/LogoMakr-282kmL.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/register.css">
+     
+ 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="../php/connect.php" >
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="fullname" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="text" placeholder="Enter birth date" name="dob" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" name="email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" name="tpno" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="password" placeholder="Password" id="password" name="password" required>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>confirm password</label>
+                            <input type="password" placeholder="Confirm Password" id="confirm_password" >
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Line 1</label>
+                            <input type="text" placeholder="Permanent or Temporary" name="address1" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address Line 2</label>
+                            <input type="text" placeholder="Permanent or Temporary" name="address2" optional>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter your city" name="city" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" name="district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Zip Code</label>
+                            <input type="number" placeholder="Enter zip code" name="zipcode" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" name="wno" required>
+                        </div>
+                    </div>
+
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Pet Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Pet name</label>
+                            <input type="text" placeholder="Enter pet name" name="petname" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Height (cm)</label>
+                            <input type="text" placeholder="Enter height in cm" name="height" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Colour</label>
+                            <input type="text" placeholder="Enter pet colour" name="colour" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pet ID</label>
+                            <input type="text" placeholder="Enter pet id" name="petid" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Weight(g)</label>
+                            <input type="text" placeholder="Enter weight in g" name="weight" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Breed</label>
+                            <input type="text" placeholder="Enter pet breed" name="breed" required>
+                        </div>
+                    </div>
+                </div>
+                
+
+                     
+                        
+                        <p><div class="checkbox-text">
+                            <div class="checkbox-content">
+                                 <input type="checkbox" id="logCheck">
+                                 <label for="logCheck" class="text">I agree to all  Terms and Conditions.</label>
+                            </div>
+    
+                        </div></p>
+                       
+                        
+
+                    <div class="buttons">
+                    
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <input type="submit">
+                           <!-- <span class="btnText" input type="submit" >Submit</span>-->
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+</body>
+</html>
+
+
+
+
+
+

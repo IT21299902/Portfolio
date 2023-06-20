@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+    <head>
+        
+      <link rel="icon" type="image/x-icon" href="../images/LogoMakr-282kmL.png">
+      <!--refered some online sources like w3 schools , sample feedback form ideas to create this-->
+        <title>Feedback page</title>
+       
+        <link rel="stylesheet" href="../styles/styles2.css">
+        <link rel="stylesheet" href="../styles/slideshow.css">
+       
+  
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+
+     
+
+        <!--titile icon link-->
+
+         <!--linking the google fonts-->
+         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+         <!--linking slide show-->
+         <link rel="stylesheet" href="../styles/slideshow.css">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <!--titile icon link-->
+         <link rel="icon" type="image/x-icon" href="../images/Nav bar images/title icon.jpeg">
+ 
+    </head>
+    <body>
+
+      
+      <header>
+        <a class="logo" href="HomePage.html"><img src="../images/LogoMakr-6SIlTa.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="HomePage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">PETS SHOP</a>
+                    <div class="dropdown-content">
+                        <a href="Accesories store page.html">Pet Accessories</a>
+                        <a href="medicine.html">Pet Medicine</a>
+                        <a href="petstore.html">Pet food</a>
+                        <a href="PetGuide.html">Pet care guidebooks</a>
+                    </div>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="clinic.html">Pet Clinic</a>
+                        <a href="complaint.html">Pet harassment complaint</a>
+                        <a href="Emergency_rescue_Page.html">Pet emergency rescue service</a>
+                        <a href="Pet Addoption page.html">Pet adoption service</a>
+                    </div>
+                <li><a href="reportus.html">REPORT US</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="login.html">LOGIN/SIGN UP</a>
+        <a class="logo" href="/"><img src="../images/images/icons8-circled-user-male-skin-type-4-48.png" alt="logo"></a>
+
+    </header>
+     
+        <br><br><br><br>       <br><br><br><br>
+         <!--BACK TO TOP BUTTON-->
+         <button onclick="topFunction()" id="myBtn" title="Go to top"> GO TO Top</button>
+       
+         <div class="testbox">
+            <form action="../php/feedbackConfig.php">
+                <div class="description">
+              <h1><center>Fell free to drop us your feedback.</center></h1>
+              <br>
+              </div>
+              <div class="para">
+              <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
+              </div><br>
+                  <hr />
+              <br>
+              <table>
+                <tr>
+                  <th class="first-col"></th>
+                  <b><th>Very Good</th>
+                  <th>Good</th>
+                  <th>Fair</th>
+                  <th>Poor</th>
+                  <th>Very Poor</th>
+                </tr>
+                <tr>
+                  <td class="first-col">1. How would you rate your overall experience with our web site?</td>
+                  <td><input type="radio" value="Very Good" name="rate" ></td>
+                  <td><input type="radio" value="Good"      name="rate" ></td>
+                  <td><input type="radio" value="Fair"      name="rate" ></td>
+                  <td><input type="radio" value="Poor"      name="rate" ></td>
+                  <td><input type="radio" value="Very Poor" name="rate" ></td>
+                </tr>
+                <tr>
+                  <td class="first-col">2. How satisfied are you with the interface ?</td>
+                  <td><input type="radio" value="Very Good"  name="satisfied" /></td>
+                  <td><input type="radio" value="Good"       name="satisfied" /></td>
+                  <td><input type="radio" value="Fair"       name="satisfied" /></td>
+                  <td><input type="radio" value="Poor"       name="satisfied" /></td>
+                  <td><input type="radio" value="Very Poor"  name="satisfied" /></td>
+                </tr>
+                <tr>
+                  <td class="first-col">3. How would you rate our services and its prices ?</td>
+                  <td><input type="radio" value="Very Good" name="prices" /></td>
+                  <td><input type="radio" value="Good"      name="prices" /></td>
+                  <td><input type="radio" value="Fair"      name="prices" /></td>
+                  <td><input type="radio" value="Poor"      name="prices" /></td>
+                  <td><input type="radio" value="Very Poor" name="prices" /></td>
+                </tr>
+                <tr>
+                  <td class="first-col">4.How satisfied are you with the colors and funt usage of the webiste ?</td>
+                  <td><input type="radio" value="Very Good" name="styles" /></td>
+                  <td><input type="radio" value="Good"      name="styles" /></td>
+                  <td><input type="radio" value="Fair"      name="styles" /></td>
+                  <td><input type="radio" value="Poor"      name="styles" /></td>
+                  <td><input type="radio" value="Very Poor" name="styles" /></td>
+                </tr>
+                <tr>
+                  <td class="first-col">5. How satisfied are you with the customer support?</td>
+                  <td><input type="radio" value="Very Good"  name="customer" /></td>
+                  <td><input type="radio" value="Good"      name="customer" /></td>
+                  <td><input type="radio" value="Fair"      name="customer" /></td>
+                  <td><input type="radio" value="Poor"      name="customer" /></td>
+                  <td><input type="radio" value="Very Poor" name="customer" /></td>
+                </tr>
+                <tr>
+                  <td class="first-col">6. How would you recommend our product / services to other people?</td>
+                  <td><input type="radio" value="Very Good" name="recommend" /></td>
+                  <td><input type="radio" value="Good"     name="recommend" /></td>
+                  <td><input type="radio" value="Fair"     name="recommend" /></td>
+                  <td><input type="radio" value="Poor"     name="recommend" /></td>
+                  <td><input type="radio" value="Very Poor"name="recommend" /></td>
+                </tr>
+
+              </table>
+              <h4>7. What should we change in order to live up to your expectations?</h4>
+              <textarea rows="5" name="more"></textarea>
+
+              <h4>Email</h4>
+              <small style="color:red">Only if you want to hear more from us.</small>
+              <input class="email" type="email" name="email" placeholder="ex:someone@gmail.com" />
+              <div class="btn-block">
+                <button type="submit" href="/">Send Feedback</button>
+              </div>
+
+            </form>
+          </div>
+          
+        
+          <br><br>
+          <br><br><br><br>
+         
+          <!--footer-->
+
+           <!--footer-->
+           <footer class="footer-distributed">
+  
+            <div class="footer-left">
+              <a class="logo" href="HomePage.html"><img src="../images/Footer iamges/LogoMakr-6SIlTa.png" alt="logo"></a>
+            
+            
+            <p class="footer-links">
+              <a  href="HomePage.html">Home</a>
+                    <br>
+                    <a href="clinic.html">Services</a>
+                    <br>
+                    <a href="petstore.html">Pets shop</a>
+                    <br>
+                    <a href="aboutus.html">About</a>
+                    <br>
+                    <a href="Feedback_page.html" class="active">Feedback</a>
+                    <br>
+                    <a href="contactus.html">Contact</a>
+            </p>
+            
+            <p class="footer-company-name">familypetcare &copy; 2022</p>
+            </div>
+            
+            <div class="footer-center">
+              <br><br>
+            <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>21 Isurupura Road</span> Malabe, Sri Lanka</p>
+            </div>
+            
+            <div>
+            <i class="fa fa-phone"></i>
+            <p>+94 77 222 2999</p>
+            </div>
+            
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">familypetcare@ptsrevice.com</a></p>
+            </div>
+            
+            </div>
+            
+            <div class="footer-right">
+              <br>
+            <p class="footer-company-about">
+            <span>About the company</span>
+            This is a website of a online pet care service,
+             we produce all the health services and all accessories for pets &amp; SEO Learner.
+            </p>
+            
+            <div class="footer-icons">
+            
+            
+            <a href="#"><img src="../images/Footer iamges/visa-2.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/maestro.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/paypal.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/apple-pay.png" width="10" height="20"></i></a>
+            
+            </div>
+            <br>
+
+            <p>FOLLOW US ON</p>
+               <div class="social">
+
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
+               </div>
+        
+           
+            </div>
+            
+            </footer>
+              
+     
+            <script src="../scripts/BackToTop.js"></script>
+            
+    </body>
+</html>

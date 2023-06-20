@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+    <head>
+ 
+     <!--it21299902 zakey.m.s.m.a-->
+      <!--refered yotube and the sample pet addoption form to creat this form -->
+      <link rel="icon" type="image/x-icon" href="../images/LogoMakr-282kmL.png">
+        <title>Pet addoption form</title>
+       
+
+        <link rel="stylesheet" href="../styles/styles2.css">
+       <link rel="stylesheet" href="../styles/pop up.css">
+       <link rel="stylesheet" href="../styles/pet addoption form.css">
+       <link rel="stylesheet" href="../styles/slideshow.css">
+      
+
+
+
+  
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+
+        <!--titile icon link-->
+         <!--linking the google fonts-->
+         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+         <!--linking slide show-->
+         <link rel="stylesheet" href="../styles/slideshow.css">
+         <link rel="stylesheet" href="../styles/pet addoption form.css">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <!--titile icon link-->
+         <link rel="icon" type="image/x-icon" href="../images/Nav bar images/title icon.jpeg">
+ 
+    </head>
+    <body>
+
+      <header>
+        <a class="logo" href="/"><img src="../images/LogoMakr-6SIlTa.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="HomePage.html">HOME</a></li>
+                <li><a  href="aboutus.html">ABOUT US</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">PETS SHOP</a>
+                    <div class="dropdown-content">
+                        <a href="Accesories store page.html">Pet Accessories</a>
+                        <a href="medicine.html">Pet Medicine</a>
+                        <a href="petstore.html">Pet food</a>
+                        <a href="PetGuide.html">Pet care guidebooks</a>
+                    </div>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="active" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="clinic.html">Pet Clinic</a>
+                        <a href="complaint.html">Pet harassment complaint</a>
+                        <a href="Emergency_rescue_Page.html">Pet emergency rescue service</a>
+                        <a href="Pet Addoption page.html" class="active">Pet adoption service</a>
+                    </div>
+                <li><a href="reportus.html">REPORT US</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="login.html">LOGIN/SIGN UP</a>
+        <a class="logo" href="/"><img src="../images/images/icons8-circled-user-male-skin-type-4-48.png" alt="logo"></a>
+
+    </header>
+        </header>
+
+         <!--BACK TO TOP BUTTON-->
+         <button onclick="topFunction()" id="myBtn" title="Go to top"> GO TO Top</button>
+
+ <br><br><br> <br><br><br>
+
+         <div class="testbox">
+
+            <form action="../php/PetaAdoptionConfig.php">
+              <div class="banner">
+                <h1>Pet Addoption Request Form</h1>
+              </div>
+              <p class="top-info">want to become a hounorable pet adopter?Then start by filling out adoption form to complete registereation as pet adopter 
+                  requester.We will contact you as soon as we confirmed your application.</p>
+              <div class="item">
+                <p>Prespective pet parent name<span class="required">*</span></p>
+                <div class="name-item">
+                  <input type="text" name="fname" placeholder="First" required/>
+                  <input type="text" name="lname" placeholder="Last" required/>
+                </div>
+              </div>
+              <div class="item">
+                <p>ID of the pet that you wish to addopt<span class="required">*</span></p>
+                <input type="text" name="petID" placeholder="P001" required/>
+              </div>
+              <div class="item">
+                <p>Email Address<span class="required">*</span></p>
+                <input type="email" name="email" required>
+              </div>
+              <div class="item">
+                <p>Phone Number</p>
+                <input type="text" name="Phone"/>
+              </div>
+              <div class="item">
+                <p>Home Address<span class="required">*</span></p>
+                <input type="text" name="Street" placeholder="Street address" required/>
+                <div class="city-item">
+                  <input type="text" name="city" placeholder="City" required/>
+                  <input type="text" name="Region" placeholder="Region" required/>
+                  <input type="text" name="Postal" placeholder="Postal / Zip code" required/>
+                </div>
+              </div>
+              <div class="item">
+                <p>Do you own any pet(s) currently<span class="required">*</span></p>
+                <input type="text" name="currentpet" placeholder="Yes / No" required>
+              </div>
+              
+              <div class="item">
+                <p>Breed of that pet(s)<span class="required">*</span></p>
+                <input type="text" name="Breed" required/>
+              </div>
+                 
+              <div class="item">
+                <p>Pet's disposition and behavior towards other dogs?<span class="required">*</span></p>
+                <textarea rows="5" name="behaviour" maxlength="200"></textarea>
+              </div>
+                 
+              <div class="item">
+                <p>Please provide your veterinarian's name<span class="required">*</span></p>
+                <input type="text" name="vetname" required>
+              </div>
+
+              <div class="item">
+                <p>Please provide your veterinarian's Phone Number<span class="required">*</span></p>
+                <input type="number" name="vetTp" required>
+              </div>
+            
+              <div class="question">
+                <p>Have you ever surrendered a pet you own to any animal shelter including a "low" or "no kill" shelter?<span class="required">*</span></p>
+                <div class="question-answer">
+                  <label><input type="radio" value="Yes" name="yes"/> <span>Yes</span></label>
+                  <label><input type="radio" value="No" name="yes"/> <span>No</span></label>
+                </div>
+              </div>
+
+              <div class="item">
+                <p>Are there children in the home? (If yes, please list ages)<span class="required">*</span></p>
+                <input type="text" name="children" required>
+              </div>
+
+              <div class="item">
+                <p>If you have to leave town, emergently or planned, where would your pet stay?)<span class="required">*</span></p>
+                <input type="text" name="left" required>
+              </div>
+              
+              <div class="item">
+                <p>How would you deal with behavioral issues such as barking, chewing, destructive behavior,
+                 bathroom accidents indoors, unruly leash behaviors in your pet?<span class="required">*</span></p>
+                <textarea rows="5" name="Dealing" ></textarea>
+              </div>
+               
+             
+              
+              <div class="item">
+                 By clicking the Apply button, I verify all of the above information is true and accurate.
+              </div><br>
+              <div class="btn-block">
+               
+              
+            <button type="submit" class="btn">  Apply </button> 
+               
+              </div>
+
+           
+              
+            
+            </form>
+        </div>
+        
+        <br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br>
+
+          <!--footer-->
+          <footer class="footer-distributed">
+  
+            <div class="footer-left">
+              <a class="logo" href="HomePage.html"><img src="../images/Footer iamges/LogoMakr-6SIlTa.png" alt="logo"></a>
+            
+            
+            <p class="footer-links">
+              <a  href="HomePage.html">Home</a>
+              <br>
+              <a href="clinic.html">Services</a>
+              <br>
+              <a href="petstore.html">Pets shop</a>
+              <br>
+              <a href="aboutus.html">About</a>
+              <br>
+              <a href="Feedback_page.html">Feedback</a>
+              <br>
+              <a href="contactus.html">Contact</a>
+            </p>
+            
+            <p class="footer-company-name">familypetcare &copy; 2022</p>
+            </div>
+            
+            <div class="footer-center">
+              <br><br>
+            <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>21 Isurupura Road</span> Malabe, Sri Lanka</p>
+            </div>
+            
+            <div>
+            <i class="fa fa-phone"></i>
+            <p>+94 77 222 2999</p>
+            </div>
+            
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">familypetcare@ptsrevice.com</a></p>
+            </div>
+            
+            </div>
+            
+            <div class="footer-right">
+              <br>
+            <p class="footer-company-about">
+            <span>About the company</span>
+            This is a website of a online pet care service,
+             we produce all the health services and all accessories for pets &amp; SEO Learner.
+            </p>
+            
+            <div class="footer-icons">
+            
+            
+            <a href="#"><img src="../images/Footer iamges/visa-2.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/maestro.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/paypal.png" width="10" height="20"></i></a>
+            <a href="#"><img src="../images/Footer iamges/apple-pay.png" width="10" height="20"></i></a>
+            
+            </div>
+            <br>
+
+            <p>FOLLOW US ON</p>
+               <div class="social">
+
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
+               </div>
+        
+           
+            </div>
+            
+            </footer>
+              
+     
+          
+            <script src="../scripts/BackToTop.js"></script>
+            
+    </body>
+</html>
