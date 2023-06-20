@@ -1,0 +1,41 @@
+-- Table structure for table `report`
+--
+
+CREATE TABLE `report` (
+  `Id` int(3) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `pid` varchar(10) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `contact` int(10) NOT NULL,
+  `inquiry` enum('delivery','payment','product','reservation') NOT NULL,
+  `description` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `report`
+--
+
+INSERT INTO `report` (`Id`, `name`, `pid`, `address`, `contact`, `inquiry`, `description`) VALUES
+(1, 'Camila', 'P12', '12,Flower road, Malabe', 712345698, '', 'my card was not accepted'),
+(2, 'Camila', 'P12', '320/a, Arukwatta North, Padukka', 712345698, '', 'products were expired'),
+(3, 'Camila', 'P12', '320/a, Arukwatta North, Padukka', 712345698, '', 'products were expired');
+
+--
+
+-- Indexes for table `report`
+--
+ALTER TABLE `report`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+ALTER TABLE `report`
+  MODIFY `Id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,38 @@
+-- Table structure for table `pet_complaint`
+--
+
+CREATE TABLE `pet_complaint` (
+  `Id` int(11) NOT NULL,
+  `fname1` varchar(60) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `date` date NOT NULL,
+  `location` varchar(70) NOT NULL,
+  `pet1` enum('dog','cat','rabbit') NOT NULL,
+  `subject` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pet_complaint`
+--
+
+INSERT INTO `pet_complaint` (`Id`, `fname1`, `name`, `date`, `location`, `pet1`, `subject`) VALUES
+(1, 'John', 'MANEL', '0000-00-00', 'Kottawa', 'dog', 'torture'),
+(2, 'John', 'MANEL', '0000-00-00', 'Kottawa', 'dog', 'torture'),
+(3, 'Kamal', 'Amal', '2022-04-06', 'Kottawa', 'cat', 'severely tortured'),
+(4, 'Kamal', 'Amal', '2022-04-06', 'Kottawa', 'cat', 'severely tortured');
+
+-- --------------------------------------------------------
+
+--
+-- Indexes for table `pet_complaint`
+--
+ALTER TABLE `pet_complaint`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- AUTO_INCREMENT for table `pet_complaint`
+--
+ALTER TABLE `pet_complaint`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--

@@ -1,0 +1,37 @@
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `Id` int(11) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `contact` int(10) NOT NULL,
+  `message` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`Id`, `name`, `email`, `contact`, `message`) VALUES
+(1, 'suwani hettiarachchi', 'abc231@gmail.com', 712345698, 'Hi I have an issue with the deliveries'),
+(2, 'suwani hettiarachchi', 'abc231@gmail.com', 712345698, 'Hi I have an issue with the deliveries'),
+(3, 'Anne', 'Anne12@gmail.com', 778548965, 'I want to channel a vet for pet crossing.'),
+(4, 'Anne', 'Anne12@gmail.com', 778548965, 'I want to channel a vet for pet crossing.'),
+(5, 'Mary', 'ginuri2001@gmail.com', 778548965, 'Hello'),
+(6, 'Mary', 'ginuri2001@gmail.com', 778548965, 'Hello');
+
+-- --------------------------------------------------------
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`Id`);
+
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--

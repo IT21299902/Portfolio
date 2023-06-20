@@ -1,0 +1,85 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: May 22, 2022 at 06:59 PM
+-- Server version: 10.4.21-MariaDB  
+-- PHP Version: 8.1.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `id` int(20) NOT NULL,
+  `fullname` varchar(100) NOT NULL,
+  `dob` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `tpno` int(10) NOT NULL,
+  `password1` varchar(50) NOT NULL,
+  `address1` varchar(100) NOT NULL,
+  `address2` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `district` varchar(100) NOT NULL,
+  `zipcode` int(11) NOT NULL,
+  `wno` int(11) NOT NULL,
+  `petname` varchar(100) NOT NULL,
+  `height1` varchar(50) NOT NULL,
+  `colour` varchar(100) NOT NULL,
+  `petid` varchar(100) NOT NULL,
+  `weight1` varchar(50) NOT NULL,
+  `breed` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`id`, `fullname`, `dob`, `email`, `tpno`, `password1`, `address1`, `address2`, `city`, `district`, `zipcode`, `wno`, `petname`, `height1`, `colour`, `petid`, `weight1`, `breed`) VALUES
+(2, 'Kamal Ariyarathna', '2003-12-01', 'kamal1@gmail.com', 772345615, 'kamal@123', 'kings street ,colombo', '1st street , kurunagala', 'colombo', 'colombo', 34098, 12, 'lucky', '15.3cm', 'brown', 'P000001', '10kg', 'dog'),
+(3, 'Pubudu Shantha', '1999-03-03', 'pubudushantha1@gmail.com', 776543219, 'shantha@777', 'flower street , colombo', 'perera screet, kurunagala', 'colombo', 'colombo', 12453, 124, 'luna', '8.2cm', 'black', 'P000002', '5kg', 'cat'),
+(4, 'Upul Shantha', '2001-04-24', 'upulshantha1@gmail.com', 778674534, '456@upul', 'st.thomas street, kandy', 'rose street , matale', 'kandy', 'kandy', 23467, 45, 'duke', '60cm', 'pink', 'P000003', '20kg', 'dog'),
+(5, 'Avishka Dilhara', '2001-04-25', 'avishka2001@gmail.com', 772229902, '12345', 'matale', 'malabe', 'palapathwala', 'matale', 21070, 4, 'rokey', '50cm', 'brown', 'P000005', '5kg', 'dog'),
+(6, 'asmath zakey', '1999-12-31', 'asmath@gmail.com', 771191919, '123456', 'colombo', 'nettabuwa', 'kurunagala', 'colombo', 45044, 1234, 'bucky', '60cm', 'black', 'P000006', '10kg', 'dog');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
